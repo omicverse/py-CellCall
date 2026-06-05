@@ -6,7 +6,7 @@
 
 | | |
 |---:|:---|
-| **Package** | [![PyPI](https://img.shields.io/pypi/v/py-cellcall?color=blue)](https://pypi.org/project/py-cellcall/) ![Python](https://img.shields.io/pypi/pyversions/py-cellcall) |
+| **Package** | [![PyPI](https://img.shields.io/pypi/v/py-CellCall?color=blue)](https://pypi.org/project/py-CellCall/) [![Downloads](https://static.pepy.tech/badge/py-CellCall)](https://pepy.tech/project/py-CellCall) ![Python](https://img.shields.io/pypi/pyversions/py-CellCall) |
 | **Meta** | [![License](https://img.shields.io/badge/license-GPLv3-green)](LICENSE) |
 
 </div>

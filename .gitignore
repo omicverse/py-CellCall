@@ -12,6 +12,6 @@ tests/reference/
 # Temp files
 _tmp_*
 *.Rdata
-outputs/
+outputs/py_plots/*.html
 tests/deliverables/
 tests/padj_*.txt
