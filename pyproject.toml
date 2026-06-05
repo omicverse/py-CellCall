@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "py-CellCall"
+version = "0.1.0"
+description = "Python port of cellcall: inference of intercellular networks from single-cell transcriptomics"
+readme = "README.md"
+license = {text = "Artistic-2.0"}
+requires-python = ">=3.9"
+authors = [
+    {name = "cellcall contributors"}
+]
+dependencies = [
+    "numpy>=1.22",
+    "pandas>=1.4",
+    "scipy>=1.8",
+    "statsmodels>=0.13",
+    "scikit-learn>=1.0",
+    "anndata>=0.8",
+    "scanpy>=1.9",
+    "matplotlib>=3.5",
+    "seaborn>=0.12",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "rpy2>=3.5"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["cellcall"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

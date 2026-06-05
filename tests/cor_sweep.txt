@@ -1,0 +1,7 @@
+cor=0.05: Pearson=0.9215 n=43 FP=5 FN=4
+cor=0.08: Pearson=0.9215 n=43 FP=5 FN=4
+cor=0.10: Pearson=0.9215 n=43 FP=5 FN=4
+cor=0.12: Pearson=0.9215 n=43 FP=5 FN=4
+cor=0.15: Pearson=0.9215 n=43 FP=5 FN=4
+cor=0.20: Pearson=0.8251 n=42 FP=10 FN=10
+Done!

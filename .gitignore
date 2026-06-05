@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+build/
+*.parquet
+tests/reference/
+.pytest_cache/
+.eggs/
+*.egg
+
+# Temp files
+_tmp_*
+*.Rdata
+outputs/
+tests/deliverables/
+tests/padj_*.txt

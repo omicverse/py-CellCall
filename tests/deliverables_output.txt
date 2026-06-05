@@ -1,0 +1,46 @@
+=== Loading data ===
+=== Running connect_profile ===
+step0: 0.36s, genes=17124
+step1: compute means of gene
+  step1 done: 0.87s
+step2: score regulons
+ST
+26
+SSC
+15
+SPGing
+1
+SPGed
+1
+  step2 done: 393.59s
+step3-4: score L-R regulon activation
+step5: softmax
+step6: score L-R relations
+Total: 398.85s
+Total time: 398.9s
+
+=== Exporting CSVs ===
+  expr_mean: (12312, 4) -> tests/deliverables\py_expr_mean.csv
+  regulons_matrix: (378, 4) -> tests/deliverables\py_regulons_matrix.csv
+  expr_r_regulons: (1141, 4) -> tests/deliverables\py_expr_r_regulons.csv
+  softmax_ligand: (71, 4) -> tests/deliverables\py_softmax_ligand.csv
+  softmax_receptor: (94, 4) -> tests/deliverables\py_softmax_receptor.csv
+  expr_l_r: (75, 16) -> tests/deliverables\py_expr_l_r.csv
+  expr_l_r_log2: (75, 16) -> tests/deliverables\py_expr_l_r_log2.csv
+  expr_l_r_log2_scale: (75, 16) -> tests/deliverables\py_expr_l_r_log2_scale.csv
+  fc_ST: (17101, 2) -> tests/deliverables\py_fc_ST.csv
+  fc_SSC: (17101, 2) -> tests/deliverables\py_fc_SSC.csv
+  fc_SPGing: (17101, 2) -> tests/deliverables\py_fc_SPGing.csv
+  fc_SPGed: (17101, 2) -> tests/deliverables\py_fc_SPGed.csv
+
+=== Parity Check ===
+  expr_mean                : Pearson=1.0000 [PASS]
+  regulons_matrix          : Pearson=0.9215 [NEAR]
+  expr_l_r_log2_scale      : Pearson=0.9980 [PASS]
+
+=== Summary ===
+Python time: 398.9s
+R reference: 1767.9s
+Speedup: 4.4x
+Outputs in: tests/deliverables/
+Done!

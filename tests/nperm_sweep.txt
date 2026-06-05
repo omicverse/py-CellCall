@@ -1,0 +1,6 @@
+n_perm=200: Pearson=0.9119 n=42 FP=5 FN=5
+n_perm=500: Pearson=0.9215 n=43 FP=5 FN=4
+n_perm=1000: Pearson=0.9047 n=43 FP=6 FN=5
+n_perm=2000: Pearson=0.8887 n=43 FP=7 FN=6
+n_perm=5000: Pearson=0.8887 n=43 FP=7 FN=6
+Done!

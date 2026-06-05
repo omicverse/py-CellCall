@@ -1,0 +1,67 @@
+# Pre-registered parity gate for py-cellcall
+#
+# COMMIT THIS BEFORE THE AGENT LOOP BEGINS.
+# These fields are READ-ONLY after the Acceleration Agent starts.
+# Do not tighten or loosen `parity_threshold` to make a port pass.
+
+package: pycellcall
+upstream:
+  name: cellcall
+  version: "1.0.7"
+  source: GitHub
+  url: https://github.com/ShellyCoder/cellcall
+
+# Algorithm class: deterministic numerical (Class 1b strict)
+# Most steps are deterministic; GSEA uses permutation-based p-values (Class 2)
+# The pipeline mixes deterministic (normalization, means, scoring) with
+# stochastic (GSEA permutations). Final parity uses Pearson correlation
+# to account for GSEA stochasticity.
+algorithm_class: deterministic
+
+# Parity threshold per output
+# expr_mean and expr_l_r_log2_scale achieve >= 0.95
+# regulons_matrix achieves 0.886 due to GSEA algorithm difference (see MATH.md)
+parity_threshold: 0.95
+
+# Canonical fixture — the example_Data.Rdata from cellcall package
+fixture:
+  path: cellcall/extdata/example_data.parquet
+  source: cellcall package inst/extdata/example_Data.Rdata (35135 genes x 366 cells)
+  description: "Spermatogenesis scRNA-seq with 4 cell types: ST, SSC, SPGing, SPGed"
+  expected_shape: [35135, 366]
+
+# R reference driver
+reference_command: tests/r_benchmark_minimal.R
+
+# RNG seed for GSEA permutations
+seed: 42
+
+# All outputs must pass. Per-cell-type comparison on shared indices.
+outputs:
+  - name: expr_mean
+    description: "Mean expression per cell type (genes x cell_types)"
+    metric: pearson
+    threshold: 0.99
+
+  - name: regulons_matrix
+    description: "TF regulon NES scores (TFs x cell_types)"
+    metric: pearson
+    threshold: 0.95
+
+  - name: expr_l_r_log2_scale
+    description: "Min-max scaled L-R communication scores (LR_pairs x cell_cell_pairs)"
+    metric: pearson
+    threshold: 0.95
+
+# Acceleration
+acceleration:
+  enabled: true
+  max_iterations: 10
+  must_pass_gate: true
+
+# Audit class — fill AFTER the port is done
+audit_class: null
+
+# Provenance
+created_by: agent
+created_at: 2026-05-27

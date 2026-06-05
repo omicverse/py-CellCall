@@ -1,0 +1,4 @@
+  File "D:\test\cellcall-master\py-cellcall\tests\test_rfgsea_bridge.py", line 111
+    ro.r(f'names(stats_vals) <- c({",".join(f\'"{g}""\' for g in fc_gene_names)})')
+                                                                                  ^
+SyntaxError: f-string expression part cannot include a backslash

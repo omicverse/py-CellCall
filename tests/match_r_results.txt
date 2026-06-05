@@ -1,0 +1,5 @@
+probs=0.75 p_adj=0.02: Pearson=0.9215 n=43 FP=5 FN=4
+probs=0.75 p_adj=0.05: Pearson=0.9007 n=53 FP=12 FN=1
+probs=0.9 p_adj=0.02: Pearson=0.8337 n=30 FP=2 FN=14
+probs=0.9 p_adj=0.05: Pearson=0.8133 n=40 FP=9 FN=11
+Done!

@@ -1,0 +1,131 @@
+Error importing in API mode: ImportError('On Windows, cffi mode "ANY" is only "ABI".')
+Trying to import in ABI mode.
+R callback write-console: 
+  
+R callback write-console: clusterProfiler v4.18.4 Learn more at https://yulab-smu.top/contribution-knowledge-mining/
+
+Please cite:
+
+T Wu, E Hu, S Xu, M Chen, P Guo, Z Dai, T Feng, L Zhou, W Tang, L Zhan,
+X Fu, S Liu, X Bo, and G Yu. clusterProfiler 4.0: A universal
+enrichment tool for interpreting omics data. The Innovation. 2021,
+2(3):100141
+  
+R callback write-console: <class 'UnicodeDecodeError'> 'utf-8' codec can't decode byte 0xd4 in position 1: invalid continuation byte <traceback object at 0x0000014EE961C540>
+R callback write-console: The following object is masked from 'package:stats':
+
+    filter
+
+  
+R callback write-console: In addition:   
+R callback write-console: Warning message:
+  
+R callback write-console: <class 'UnicodeDecodeError'> 'utf-8' codec can't decode byte 0xb3 in position 0: invalid start byte <traceback object at 0x0000014EEC7E0200>
+R callback write-console: In addition:   
+R callback write-console: Warning messages:
+  
+R callback write-console: 1:   
+R callback write-console: In preparePathwaysAndStats(pathways, stats, minSize, maxSize, gseaParam,  :  
+R callback write-console: 
+   
+R callback write-console:  There are ties in the preranked stats (3.27% of the list).
+The order of those tied genes will be arbitrary, which may produce unexpected results.
+  
+R callback write-console: 2:   
+R callback write-console: In fgseaMultilevel(pathways = pathways, stats = stats, minSize = minSize,  :  
+R callback write-console: 
+   
+R callback write-console:  For some of the pathways the P-values were likely overestimated. For such pathways log2err is set to NA.
+  
+R callback write-console: 3:   
+R callback write-console: In fgseaMultilevel(pathways = pathways, stats = stats, minSize = minSize,  :  
+R callback write-console: 
+   
+R callback write-console:  For some pathways, in reality P-values are less than 1e-10. You can set the `eps` argument to zero for better estimation.
+  
+R callback write-console: In addition:   
+R callback write-console: Warning messages:
+  
+R callback write-console: 1:   
+R callback write-console: In preparePathwaysAndStats(pathways, stats, minSize, maxSize, gseaParam,  :  
+R callback write-console: 
+   
+R callback write-console:  There are ties in the preranked stats (0.96% of the list).
+The order of those tied genes will be arbitrary, which may produce unexpected results.
+  
+R callback write-console: 2:   
+R callback write-console: In fgseaMultilevel(pathways = pathways, stats = stats, minSize = minSize,  :  
+R callback write-console: 
+   
+R callback write-console:  There were 7 pathways for which P-values were not calculated properly due to unbalanced (positive and negative) gene-level statistic values. For such pathways pval, padj, NES, log2err are set to NA. You can try to increase the value of the argument nPermSimple (for example set it nPermSimple = 10000)
+  
+R callback write-console: In addition:   
+R callback write-console: Warning messages:
+  
+R callback write-console: 1:   
+R callback write-console: In preparePathwaysAndStats(pathways, stats, minSize, maxSize, gseaParam,  :  
+R callback write-console: 
+   
+R callback write-console:  There are ties in the preranked stats (1.13% of the list).
+The order of those tied genes will be arbitrary, which may produce unexpected results.
+  
+R callback write-console: 2:   
+R callback write-console: In fgseaMultilevel(pathways = pathways, stats = stats, minSize = minSize,  :  
+R callback write-console: 
+   
+R callback write-console:  There were 3 pathways for which P-values were not calculated properly due to unbalanced (positive and negative) gene-level statistic values. For such pathways pval, padj, NES, log2err are set to NA. You can try to increase the value of the argument nPermSimple (for example set it nPermSimple = 10000)
+  
+R callback write-console: 3:   
+R callback write-console: In fgseaMultilevel(pathways = pathways, stats = stats, minSize = minSize,  :  
+R callback write-console: 
+   
+R callback write-console:  For some of the pathways the P-values were likely overestimated. For such pathways log2err is set to NA.
+  
+R callback write-console: 4:   
+R callback write-console: In fgseaMultilevel(pathways = pathways, stats = stats, minSize = minSize,  :  
+R callback write-console: 
+   
+R callback write-console:  For some pathways, in reality P-values are less than 1e-10. You can set the `eps` argument to zero for better estimation.
+  
+R callback write-console: In addition:   
+R callback write-console: Warning messages:
+  
+R callback write-console: 1:   
+R callback write-console: In preparePathwaysAndStats(pathways, stats, minSize, maxSize, gseaParam,  :  
+R callback write-console: 
+   
+R callback write-console:  There are ties in the preranked stats (1.09% of the list).
+The order of those tied genes will be arbitrary, which may produce unexpected results.
+  
+R callback write-console: 2:   
+R callback write-console: In fgseaMultilevel(pathways = pathways, stats = stats, minSize = minSize,  :  
+R callback write-console: 
+   
+R callback write-console:  There were 2 pathways for which P-values were not calculated properly due to unbalanced (positive and negative) gene-level statistic values. For such pathways pval, padj, NES, log2err are set to NA. You can try to increase the value of the argument nPermSimple (for example set it nPermSimple = 10000)
+  
+R callback write-console: 3:   
+R callback write-console: In fgseaMultilevel(pathways = pathways, stats = stats, minSize = minSize,  :  
+R callback write-console: 
+   
+R callback write-console:  For some of the pathways the P-values were likely overestimated. For such pathways log2err is set to NA.
+  
+R callback write-console: 4:   
+R callback write-console: In fgseaMultilevel(pathways = pathways, stats = stats, minSize = minSize,  :  
+R callback write-console: 
+   
+R callback write-console:  For some pathways, in reality P-values are less than 1e-10. You can set the `eps` argument to zero for better estimation.
+  
+Processing ST...
+  ST: 23 active TFs
+Processing SSC...
+  SSC: 9 active TFs
+Processing SPGing...
+  SPGing: 0 active TFs
+Processing SPGed...
+  SPGed: 1 active TFs
+
+R clusterProfiler bridge: Pearson=0.9045 n=33 FP=1 FN=10
+  SPGed: R=1 Py=1 agree=1 FP=[] FN=[]
+  SPGing: R=1 Py=0 agree=0 FP=[] FN=['PARP1']
+  SSC: R=17 Py=9 agree=9 FP=[] FN=['ESR1', 'FOXO1', 'HIF1A', 'ID4', 'NFATC3', 'NFYB', 'PPARG', 'RUNX2']
+  ST: R=23 Py=23 agree=22 FP=['NFKB2'] FN=['NFATC3']

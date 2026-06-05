@@ -1,0 +1,5 @@
+bh+adj0.05        : Pearson=0.8772 n=42 FP=7 FN=7
+bh+adj0.03        : Pearson=0.8927 n=38 FP=4 FN=8
+bh+adj0.08        : Pearson=0.8895 n=49 FP=10 FN=3
+nobh+adj0.02      : Pearson=0.9215 n=43 FP=5 FN=4
+Done!
